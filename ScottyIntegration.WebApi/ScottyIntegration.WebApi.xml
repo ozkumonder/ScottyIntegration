@@ -1,0 +1,1143 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ScottyIntegration.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:ScottyIntegration.WebApi.Controllers.AccountController.Token(ScottyIntegration.WebApi.Models.TokenModels.TokenRequest)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Controllers.ConnectService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Controllers.ConnectService.CheckGibUser(System.String)">
+            <summary>
+            Parametre verilen vergi numarasına ait firma bilgisinin edevlet durumunu kontrol eder (E-Fatura mükellefi olup olmamasını kontrol eder.).
+            </summary>
+            <param name="taxNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Controllers.InvoiceController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Controllers.InvoiceController.#ctor(Microsoft.Extensions.Logging.ILogger{ScottyIntegration.WebApi.Controllers.InvoiceController})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Controllers.InvoiceController.Invoice(ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Controllers.LogController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.DataAccess.DataLogic.CheckEmuAccCode(System.String)">
+            <summary>
+            Parametre verilen muhasebe konunun var olup olmadığı kontrolünü yapar
+            </summary>
+            <param name="emuAccCode"></param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.DataAccess.DataLogic.CheckProjectCard(System.String)">
+            <summary>
+            Parametre verilen proje konunun var olup olmadığı kontrolünü yapar
+            </summary>
+            <param name="projectCode"></param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.DataAccess.DataLogic.CheckSrvCard(System.String)">
+            <summary>
+            Parametre verilen hizmet konunun var olup olmadığı kontrolünü yapar
+            </summary>
+            <param name="srvCode"></param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.DataAccess.DataLogic.CheckClCard(System.String)">
+            <summary>
+            Parametre verilen cari hesap konunun var olup olmadığı kontrolünü yapar
+            </summary>
+            <param name="clCode"></param>
+            <returns>true or false</returns>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.DataAccess.DataLogic.CheckClientEInvoice(System.String)">
+            <summary>
+            Cari Hesabın efatura kontrolünü yapar
+            </summary>
+            <param name="clCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.DataAccess.DataLogic.CheckClientEArchive(System.String)">
+            <summary>
+            Cari Hesabın earşiv kontrolünü yapar
+            </summary>
+            <param name="clCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.DataAccess.DataLogic.GetClientRefByCode(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="clCode"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Core.Helper.ConfigHelper">
+            <summary>
+            This Configuration class is basically just a set of 
+            properties with a couple of static methods to manage
+            the serialization to and deserialization from a
+            simple XML file.
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType">
+            <summary>
+            Tiger Rest Url Parameter
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.MalzemeKarti">
+            <summary>
+            Malzeme Kartı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.MalzemeFisi">
+            <summary>
+            Malzeme Hareketleri
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.PurchasedServices">
+            <summary>
+            Alınan Hizmet Kartı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.SafeDepositSlips">
+            <summary>
+            Kasa İşlemleri
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.Arps">
+            <summary>
+            Cari Hesap Kartı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.ArpSlips">
+            <summary>
+            Cari Hesap Fişleri
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.BankSlips">
+            <summary>
+            Banka Fişleri
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.GlSlips">
+            <summary>
+            Muhasebe Fişleri
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.Projects">
+            <summary>
+            Proje Kartı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.SoldServices">
+            <summary>
+            Verilen Hizmet Kartı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.GLAccounts">
+            <summary>
+            Muhasebe Hesap Kartı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.SalesInvoices">
+            <summary>
+            Satış Faturası
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerDataType.PurchaseInvoices">
+            <summary>
+            Satın Alma Faturası
+            </summary>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerRestService.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerRestService.GetAccessToken">
+            <summary>
+            Logo Rest Servis Token üretir.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.LogoRestIntegretion.TigerRestService.GetAccessToken(System.String)">
+            <summary>
+            Prametre verilen firma no ile login olunur.
+            </summary>
+            <param name="firmNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.Utilities.ExtensionMethodsForLogo.LogoPackDate(System.Object)">
+            <summary>
+            Verilen tarih parametresini logo formatında long olarak döner
+            </summary>
+            <param name="date">Tarih bilgisi verilir</param>
+            <returns></returns>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.Utilities.ExtensionMethodsForLogo.LogoPackTime(System.Object)">
+            <summary>
+            Verilen zaman parametresini logo formatında long olarak döner
+            </summary>
+            <param name="time">Zaman bilgilisi verilir</param>
+            <returns></returns>
+        </member>
+        <member name="M:ScottyIntegration.WebApi.Core.Utilities.ExtensionMethodsForLogo.ToReplaceLogoTableName(System.String)">
+            <summary>
+            Sorgu içerisinde kullanulan XXX olarak tanımlanan firma ve dönem bilgilirini tanımlanmış firma dönem bilgileriyle değiştirir
+            </summary>
+            <param name="query">SQL query verilir</param>
+            <returns></returns>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.Dtos.ClientInfoDto">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ClientId">
+            <summary>
+            Müşteri Id
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ClientName">
+            <summary>
+            Müşteri Adı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ClientSurName">
+            <summary>
+            Müşteri Soyadı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ClientCommercial">
+            <summary>
+            Müşteri Ticari Unvan veya İsim Soyisim
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ClientInvoiceAddress">
+            <summary>
+            Müşteri Fatura Adresi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ClientEMail">
+            <summary>
+            Cari Mail Adresi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ClientTaxNumber">
+            <summary>
+            Müşteri Vergi Kimlik No - TC Kimlik No
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.PaymentId">
+            <summary>
+            Ödeme Id
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.PaymentCreatedDate">
+            <summary>
+            Ödeme Oluşturma Tarihi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.Price">
+            <summary>
+            Fiyat
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ProviderCommissionFee">
+            <summary>
+            Komisyon Oranı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ProviderCommissionAmount">
+            <summary>
+            Komisyon Miktarı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ProviderPaymentId">
+            <summary>
+            Ödeme Id (provider_payment_id)
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ProviderTransactionId">
+            <summary>
+            Ödeme Transaction Id
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.TripId">
+            <summary>
+            Trip Id
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.Notes">
+            <summary>
+            Fatura Açıklaması
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.Dtos.RiderServiceModel.ServiceCode">
+            <summary>
+            Hizmet Kodu
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.ERPModels.BankSlip">
+            <summary>
+            Banka Hareketleri
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.INTERNAL_REFERENCE">
+            <summary>
+            Kayıt Referansı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.TYPE">
+            <summary>
+            Fiş Tipi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.DATE">
+            <summary>
+            Tarih
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.NUMBER">
+            <summary>
+            Fiş No "~" olarak gönderildiğinde logo numaralama şablonunun ürettiği numarayı alır
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.AUXIL_CODE">
+            <summary>
+            Özel Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.AUTH_CODE">
+            <summary>
+            Yetki Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.DIVISION">
+            <summary>
+            İşyeri
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.DEPARMENT">
+            <summary>
+            Bölüm
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.SIGN">
+            <summary>
+            Borç - Alacak İşareti - 0 Borç 1 Alacak
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.NOTES1">
+            <summary>
+            Açıklama
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.NOTES2">
+            <summary>
+            Açıklama
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.CURRSEL_TOTALS">
+            <summary>
+            Kullanılacak Para Birimi Genel - 0 Raporlama Dövizi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlip.CURRSEL_DETAILS">
+            <summary>
+            Kullanılacak Para Birimi Satır - 0 Yerel Para Birimi, 2 İşlem Dövizi
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.TYPE">
+            <summary>
+            Satır Tipi - 3 Gelen Havale, 4 Gönderilen Havale
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.TRANNO">
+            <summary>
+            İşlem No
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.BANKACC_CODE">
+            <summary>
+            Banka Hesap Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.ARP_CODE">
+            <summary>
+            Cari Hesap Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.DATE">
+            <summary>
+            Tarih
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.SIGN">
+            <summary>
+            Borç - Alacak İşareti - 0 Borç 1 Alacak
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.AUXIL_CODE">
+            <summary>
+            Hareket Özel Kodu 
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.DOC_NUMBER">
+            <summary>
+            Belge No
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.GL_CODE1">
+            <summary>
+            Muhasebe Kodu 1
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.GL_CODE2">
+            <summary>
+            Muhasebe Kodu 2
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.DESCRIPTION">
+            <summary>
+            Satır Açıklaması
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.CURR_TRANS">
+            <summary>
+            İşlem Dövizi 0 TL, 1 USD, 17 GBP, 20 EUR
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.DEBIT">
+            <summary>
+            Borç
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.CREDIT">
+            <summary>
+            Alacak
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.AMOUNT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.TC_XRATE">
+            <summary>
+            İşlem Dövizi Kuru 
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.TC_AMOUNT">
+            <summary>
+            İşlem Dövizi Tutarı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.RC_XRATE">
+            <summary>
+            Raporlama Dövizi Kuru
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.RC_AMOUNT">
+            <summary>
+            Raporlama Dövizi Tutarı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.ARP_BNKDIV_NR">
+            <summary>
+            CH Banka Şubesi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.ARP_BNKACCOUNT_NR">
+            <summary>
+            CH Banka Hesap No
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.BNK_TRACKING_NR">
+            <summary>
+            Banka Takip No
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.TRADING_GRP">
+            <summary>
+            Ticari İşlem Grubu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.CURRSEL_TRANS">
+            <summary>
+            Satır Döviz Türü  0 TL, 1 USD, 17 GBP, 20 EUR
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.BANK_PROC_TYPE">
+            <summary>
+            Banka Hareket Türü - 2 Havale 3 EFT
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.DUE_DATE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.PROJECT_CODE">
+            <summary>
+            Proje Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.AFFECT_RISK">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.BANK_BRANCHS">
+            <summary>
+            BI Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.SALESMAN_CODE">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BankSlipTransaction.IBAN">
+            <summary>
+            IBAN
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.ERPModels.BaseEntity">
+            <summary>
+            Logo Rest Aktarım Parametreleri SInıfı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.BaseEntity.DataObjectParameter">
+            <summary>
+            Aktarım Parametreleri
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.ERPModels.ClientCard">
+            <summary>
+            Cari Hesap Kartı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.INTERNAL_REFERENCE">
+            <summary>
+            Logo Kayıt Id Bilgisi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.ACCOUNT_TYPE">
+            <summary>
+            Cari Hesap Tipi 1 Alıcı, 2 Satıcı, 3 Alıcı Satıcı, 4 Grup Şirketi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CODE">
+            <summary>
+            Cari Hesap Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TITLE">
+            <summary>
+            Cari Hesap Unvanı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TITLE2">
+            <summary>
+            Cari Hesap Unvanı 2
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.LOGOID">
+            <summary>
+            E-İş Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.INVOICE_PRNT_CNT">
+            <summary>
+            Fatura Yazım Sayısı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.ADDRESS1">
+            <summary>
+            Adres 1
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.ADDRESS2">
+            <summary>
+            Adres 2
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TOWN_CODE">
+            <summary>
+            İlçe Kodu Örn; 255
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TOWN">
+            <summary>
+            İlçe
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CITY_CODE">
+            <summary>
+            İl Kodu Örn; 34
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CITY">
+            <summary>
+            İl
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.COUNTRY_CODE">
+            <summary>
+            Ülke Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.COUNTRY">
+            <summary>
+            Ülke
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.POSTAL_CODE">
+            <summary>
+            Posta Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TELEPHONE1_CODE">
+            <summary>
+            Telefon Alan Kodu 1
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TELEPHONE1">
+            <summary>
+            Telefon 1
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TELEPHONE2_CODE">
+            <summary>
+            Telefon Alan Kodu 2
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TELEPHONE2">
+            <summary>
+            Telefon 2
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CURRENCY">
+            <summary>
+            Cari Hesap Döviz Türü O:TL -  1:USD - 20:EUR - 17:GBP
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TAX_ID">
+            <summary>
+            Vergi Kimlik No
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.PERSCOMPANY">
+            <summary>
+            Şahıs Şirketi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.ISFOREIGN">
+            <summary>
+            Yabancı Uyruk
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TCKNO">
+            <summary>
+            TC Kimlik No
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.NAME">
+            <summary>
+            Adı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.SURNAME">
+            <summary>
+            Soyadı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TAX_OFFICE">
+            <summary>
+            Vergi Dairesi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.TAX_OFFICE_CODE">
+            <summary>
+            Vergi Dairesi Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.E_MAIL">
+            <summary>
+            E-Posta
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.E_MAIL2">
+            <summary>
+            E-Posta 2
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.E_MAIL3">
+            <summary>
+            E-Posta 3
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CONTACT">
+            <summary>
+            İlgili
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CONTACT2">
+            <summary>
+            İlgili
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CONTACT3">
+            <summary>
+            İlgili
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CORRESP_LANG">
+            <summary>
+            Yazışma Dili (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.RISKFACT_CHQ">
+            <summary>
+            Risk Faktörü Çek Kendi 
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.RISKFACT_PROMNT">
+            <summary>
+            Risk Faktörü Senet Kendi 
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.GL_CODE">
+            <summary>
+            Muhasebe Hesap Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.OHP_CODE">
+            <summary>
+            Masraf Merkezi Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.PROJECT_CODE">
+            <summary>
+            Proje Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CL_ORD_FREQ">
+            <summary>
+            Sipariş Sıklığı (Gün) (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.ORD_DAY">
+            <summary>
+            Sipariş Günleri (Default Value = 127 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.PURCHBRWS">
+            <summary>
+            Kullanım Yeri Satınalma (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.SALESBRWS">
+            <summary>
+            Kullanım Yeri Satış (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.IMPBRWS">
+            <summary>
+            Kullanım Yeri İhtalat (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.EXPBRWS">
+            <summary>
+            Kullanım Yeri İhracat (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.FINBRWS">
+            <summary>
+            Kullanım Yeri Finans (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.COLLATRLRISK_TYPE">
+            <summary>
+            COLLATRLRISK_TYPE (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.RISK_TYPE1">
+            <summary>
+            RISK_TYPE1 (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.RISK_TYPE2">
+            <summary>
+            RISK_TYPE2 (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.RISK_TYPE3">
+            <summary>
+            RISK_TYPE3 (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CST_CEK_RISK_FACTOR">
+            <summary>
+            Risk Faktörü Çek Müşteri 
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CST_SENET_RISK_FACTOR">
+            <summary>
+            Risk Faktörü Senet Müşteri 
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.PROFILE_ID">
+            <summary>
+            E-Fatura Senaryo 0 Temel Fatura, 1 Ticari Fatura, 2 Yolcu Beraber Fatura
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CST_CIRO_CEK_RISK_FAC">
+            <summary>
+            Risk Faktörü Çek Ciro
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.CST_CIRO_SENET_RISK_FAC">
+            <summary>
+            Risk Faktörü Senet Ciro
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.EARCHIVE_SEND_MODE">
+            <summary>
+            E-Arşiv Gönderim Şekli 1 Kağıt, 2 Elektronik
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.PROFILEID_DESP">
+            <summary>
+            E-İrsaliye Senaryo (Default Value = 1 )
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.E_COMM_ID">
+            <summary>
+            Veri Aktarım No
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.POST_LABEL">
+            <summary>
+            Posta Kutusu Etiketi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.SENDER_LABEL">
+            <summary>
+            Göderici Birim Etiketi  
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.ACCEPT_EINV">
+            <summary>
+            E-Fatura Kullanıcısı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.ClientCard.EINV_EARC_TYPE">
+            <summary>
+            E-Fatura/E-Arşiv Tipi
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.ERPModels.Invoice">
+            <summary>
+            Fatura
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.TYPE">
+            <summary>
+            Fatura Tipi 1: Mal alım faturası, 2: Perakende satış iade faturası, 3: Toptan satış iade faturası, 4: Alınan hizmet faturası, 5: Alınan proforma fatura, 6: alım iade faturası, 7: Perakende satış faturası, 8: Toptan satış faturası, 9: Verilen hizmet faturası, 10: Verilen proforma fatura, 13: Alınan Fiyat farkı faturası, 14: Verilen fiyat farkı faturası, 26: Müstahsil makbuzu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.NUMBER">
+            <summary>
+            Fatura Numarası
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.DOC_NUMBER">
+            <summary>
+            Belge Numarası
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.DOC_TRACK_NR">
+            <summary>
+            Doküman İzleme Numarası 
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.DATE">
+            <summary>
+            Fatura Tarihi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.TIME">
+            <summary>
+            Fatura Saati
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.AUXIL_CODE">
+            <summary>
+            Fatura Özel Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.AUTH_CODE">
+            <summary>
+            Fatura Yetki Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.NOTES1">
+            <summary>
+            Fatura Açıklaması 1
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.NOTES2">
+            <summary>
+            Fatura Açıklaması 2
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.NOTES3">
+            <summary>
+            Fatura Açıklaması 3
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.NOTES4">
+            <summary>
+            Fatura Açıklaması 4
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.NOTES5">
+            <summary>
+            Fatura Açıklaması 5
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.NOTES6">
+            <summary>
+            Fatura Açıklaması 6
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.ARP_CODE">
+            <summary>
+            Cari Hesap Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.OHP_CODE">
+            <summary>
+            Masraf Merkezi Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.PROJECT_CODE">
+            <summary>
+            Proje Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.CURR_INVOICE">
+            <summary>
+            Fatura Kur Bilgisi 1 USD, 20 EUR
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.TC_XRATE">
+            <summary>
+            İşlem Dövizi Kuru
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.CURRSEL_TOTALS">
+            <summary>
+            Kullanılacak Para Birimi Genel
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.CURRSEL_DETAILS">
+            <summary>
+            Kullanılacak Para Birimi Satır
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.TRANSACTIONS">
+            <summary>
+            Satırlar
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.EINSTEAD_OF_DISPATCH">
+            <summary>
+            Satış İrsaliye yerine geçer
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.DOC_DATE">
+            <summary>
+            Düzenleme Tarihi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.EINVOICE">
+            <summary>
+            E-Fatura Türü 1 E-Fatura, 2 E-Arşiv
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.PROFILE_ID">
+            <summary>
+            E-Fatura Senaryo 1 Temel Fatura, 2 Ticari Fatura, 3 Yolcu Beraber Fatura
+            </summary>
+            <example>bla bla bla</example>
+            <code>code nedur</code>
+            <value>1</value>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.VATEXCEPT_CODE">
+            <summary>
+            Kdv Muafiyet Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.EINVOICE_TYPE">
+            <summary>
+            E-Fatura - E-Arşiv Tipi 1 Özel Matrah, 2 İstisna, 3 Araç Tescil, 4 Tevkifat
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.Invoice.EARCHIVEDETR_INSTEADOFDESP">
+            <summary>
+            Satınalma İrsaliye yerine geçer
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransactions">
+            <summary>
+            Fatura Satırları
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransactions.items">
+            <summary>
+            Fatura Satırları
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction">
+            <summary>
+            Fatura Satırı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.TYPE">
+            <summary>
+            Satır Tipi ;0 Malzeme satırı;1 Promosyon;2 İndirim;3 Masraf;4 Hizmet;5 Depozito;6 Karma koli satırı;7 Karma koli detayı;8 Sabit kıymet satırı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.MASTER_CODE">
+            <summary>
+            Malzeme Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.DATE">
+            <summary>
+            Tarih
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.FTIME">
+            <summary>
+            Saat
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.GL_CODE1">
+            <summary>
+            Miktar
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.PRICE">
+            <summary>
+            Birim Fiyat
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.CURR_TRANSACTION">
+            <summary>
+            Satır Kur Bilgisi 1 USD, 20 EUR
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.TC_XRATE">
+            <summary>
+            İşlem Dövizi Kuru
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.UNIT_CODE">
+            <summary>
+            Birim Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.RET_COST_TYPE">
+            <summary>
+            İade Tipi
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.VAT_RATE">
+            <summary>
+            Kdv Oranı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.EDT_CURR">
+            <summary>
+            Dövizli Para Türü
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.EDT_PRICE">
+            <summary>
+            Dövizli Birim Fiyat
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.PROJECT_CODE">
+            <summary>
+            Proje Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.VATEXCEPT_CODE">
+            <summary>
+            Kdv Muafiyet Kodu
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ERPModels.InvoiceTransaction.DESCRIPTION">
+            <summary>
+            Satır Açıklaması
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.Global.ResponseLog">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.ResultTypes.ServiceResult">
+            <summary>
+            Servis Dönüş Sınıfı
+            </summary>
+        </member>
+        <member name="P:ScottyIntegration.WebApi.Models.ResultTypes.ServiceResult.JResult">
+            <summary>
+            JSON Result
+            </summary>
+        </member>
+        <member name="T:ScottyIntegration.WebApi.Models.TokenModels.TokenRequest">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
