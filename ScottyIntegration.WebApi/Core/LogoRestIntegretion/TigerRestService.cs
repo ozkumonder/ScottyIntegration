@@ -28,14 +28,15 @@ namespace ScottyIntegration.WebApi.Core.LogoRestIntegretion
         /// </summary>
         public TigerRestService()
         {
+            var settings = ConfigHelper.DeserializeDatabaseConfiguration(ConfigHelper.ReadPath);
             serviceSettings = new TigerServiceSettings
             {
-                ClientId = ConfigHelper.DeserializeDatabaseConfiguration(ConfigHelper.ReadPath).RestClientId.DecryptIt(),
-                ClientSecret = ConfigHelper.DeserializeDatabaseConfiguration(ConfigHelper.ReadPath).RestClientSecret.DecryptIt(),
-                ServiceUrl = ConfigHelper.DeserializeDatabaseConfiguration(ConfigHelper.ReadPath).RestServiceUrl,
-                UserName = ConfigHelper.DeserializeDatabaseConfiguration(ConfigHelper.ReadPath).LogoUserName,
-                FirmCode = ConfigHelper.DeserializeDatabaseConfiguration(ConfigHelper.ReadPath).LogoFirmNumber,
-                Password = ConfigHelper.DeserializeDatabaseConfiguration(ConfigHelper.ReadPath).LogoPassword.DecryptIt()
+                ClientId = settings.RestClientId.DecryptIt(),
+                ClientSecret = settings.RestClientSecret.DecryptIt(),
+                ServiceUrl = settings.RestServiceUrl,
+                UserName = settings.LogoUserName,
+                FirmCode = settings.LogoFirmNumber,
+                Password = settings.LogoPassword.DecryptIt()
             };
             tokenHolder = TokenHolder.GetInstance();
         }
@@ -53,7 +54,7 @@ namespace ScottyIntegration.WebApi.Core.LogoRestIntegretion
             tokenHolder = TokenHolder.GetInstance();
         }
         /// <summary>
-        /// Logo Rest Servis Token üretir.
+        /// Logo Rest Servis Token Ã¼retir.
         /// </summary>
         /// <returns></returns>
         public TokenHolder GetAccessToken()
@@ -561,8 +562,8 @@ namespace ScottyIntegration.WebApi.Core.LogoRestIntegretion
                         }
                         if (jObject != null)
                         {
-                            JToken ýtem = jObject["error"];
-                            if (ýtem != null)
+                            JToken Ã½tem = jObject["error"];
+                            if (Ã½tem != null)
                             {
 
                             }
@@ -570,8 +571,8 @@ namespace ScottyIntegration.WebApi.Core.LogoRestIntegretion
                             if (jToken != null)
                             {
                             }
-                            JToken ýtem1 = jObject["Message"];
-                            if (ýtem1 != null)
+                            JToken Ã½tem1 = jObject["Message"];
+                            if (Ã½tem1 != null)
                             {
                             }
                             JToken jToken1 = jObject["ModelState"];
